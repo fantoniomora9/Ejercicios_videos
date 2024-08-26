@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <h1>Clase 13 Ejercicio Tipos de Operadores</h1>
+    <Script>
+        // operadores
+        // aritmeticos +-/%()*/
+        let a = 5 +(5-10)*3;
+        let modulo = 5/2;
+
+        console.log(a);
+        console.log(modulo);
+
+        // relacionales
+        // <,>,>=,<=,=,==,===,!=,!==
+        console.log(8>9);
+        console.log(9>8);
+        console.log(8 >= 9);
+        console.log(9>= 8);
+        console.log(7 < 7);
+        console.log(7 <= 7);
+
+        /*
+        = 1 igual es asignacion de variable
+        == 2 iguales es comparacion de valor
+        === 3 iguales es comparacion de valor y tipo de dato
+        */
+
+        console.log(7 === 7);
+        console.log("7" === 7);
+        console.log(0 === false);
+
+        // incremento Decremento
+        let i = 1;
+
+        i = i + 2;
+        i += 3;
+        i /= 3;
+        console.log(i);
+        console.log(i++);
+        console.log(++i);
+
+        // operador unario
+        i++;
+        i--;
+        ++i;
+        --i;
+
+        /*
+
+        -- Logicos
+        -- Not: niega es decir lo que es verdadero lo vuelve falso y viceversa
+        -- || Or: cuando tengo 2 o mas condiciones, con que una se cumpla es decir sea verdadera
+            el Or validara
+        -- && And cuando tenga 2 o mas condiciones todas tienen que cumplirse
+           es decir ser verdaderas para que and se valide
+        */
+       console.log(!true);
+       console.log(!false);
+       console.log((9===9) || ("9" === 9));
+       console.log((9===9) && ("9" === "9"));
+       console.log((9===9) && ("9" === 9));
+
+    </Script>
+</body>
+</html>

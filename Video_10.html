@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h1>Clase 10 Funciones</h1>
+    <Script>
+        // Funcion Declarada
+        function estoEsUnaFuncion() {
+            console.log("uno");
+            console.log("dos");
+            console.log("tres");
+        }
+        //Invocacion de funcion
+       // estoEsUnaFuncion();
+
+        function unaFuncionQueDevuelveValor(){
+            console.log("uno");
+            return 19;
+            console.log("dos");
+            console.log("tres");
+            return "La funcion ha retornado una cadena de texto";
+        }
+
+        //let valorDeFuncion = unaFuncionQueDevuelveValor();
+       // console.log(valorDeFuncion);
+
+       function saludar(nombre = "Desconocido", edad = 0){
+        console.log(`Hola, mi nombre es  ${nombre} y tengo ${edad} años`);
+       }
+       saludar("Kenai", 7);
+       saludar();
+
+       funcionDeclarada();
+       // funciones declaradas vs funciones expresadas
+       function funcionDeclarada(){
+        console.log("Estos es una declarada, puede invocarse en cualquier"
+        + "parte de nuestro codigo, incluso antes de que la funcion sea declarada.");
+       }
+
+       //funcionExpresada();
+       funcionDeclarada();
+
+       // funcion anonima
+       const funcionExpresada = function(){
+       console.log("Esto es una funcion expresada, es decir que se le ha asigando como valor" 
+        + "a una variable, si invocamos esta funcion antes de su definicion Js nos dira.... " +
+        "Cannot access 'funcionExpresada' before initialization"
+       )
+       }
+
+       funcionExpresada();
+
+    </Script>
+</body>
+</html>

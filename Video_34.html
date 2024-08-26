@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios clase 34</title>
+</head>
+<body>
+    <h1> Clase 34 Ejercicio de complemento </h1>
+
+    <script>
+        /* 1) Programa una función que cuente el número de caracteres de una 
+        cadena de texto, pe. miFunción("Hola Mundo") devolverá 10 */
+        function contarCaracteres (input){
+            let texto = input.toString();
+            return texto.length;
+        
+        }
+
+        let texto1 = "hola mundo";
+        let numero= contarCaracteres(texto1);
+        console.log("Numero de caracteres:" + numero);
+
+        let numero1 = 123456;
+        console.log("Numero de caracteres: "+numero1);
+
+        /* 2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. 
+        miFunción("Hola Mundo", 4) devolverá "Hola" */
+        function Recortar(texto, numeroCaracteres){
+        return texto.slice(0,numeroCaracteres);
+        }
+
+        let textoo = "Hola Mundo";
+        let recortar = Recortar(textoo,6);
+        console.log(recortar)
+            /* 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe.
+     miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'] */
+
+        function ArrayTexto(texto, separador){
+        return texto.split(separador);
+        }
+
+        let texto = "Hola Que Tal";
+        let resultado = ArrayTexto(texto,"");
+        console.log(resultado);
+
+    /* 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo */
+        function RepetirX(texto, num){
+            return texto.repeat(num);
+        }
+
+        let texto2 = "hola Mundo";
+        let resultado2 = RepetirX(texto2,8);
+        console.log(resultado2);
+
+    </script>
+
+</body>
+</html>

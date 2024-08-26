@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 Video 6</title>
+</head>
+<body>
+    <H1>Este es el Ejercicio del Video 6 Template Strings</H1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>   
+        <li>Invierno</li>         
+    </ul>
+    <script>
+        let nombre = "Jon";
+        let apellido = "Mircha";
+
+        // Concatenacion
+        let saludo = "Hola mi nombre es " + nombre+ " "+ apellido + ".";
+        console.log(saludo);
+
+        //Interpolacion de variables
+        //Template string
+        let saludo2 = `Hola mi nomnre es ${nombre} ${apellido}.`
+        console.log(saludo2);
+
+        let ul = "    <ul> <li>Primavera</li> <li><Video></Video>erano</li> <li>Otoño</li> <li>Invierno</li> </ul>"
+        console.log(ul);
+
+let ul2 = `
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>   
+        <li>Invierno</li>         
+    </ul>
+`
+console.log(ul2);
+
+let ul3 = "<ul>"+
+"<li>Primavera</li>" + 
+        "<li>Verano</li>"+
+        "<li>Otoño</li>"+   
+        "<li>Invierno</li>" +       
+    "</ul>"
+    console.log(ul3);
+
+</script>
+</body>
+</html>
